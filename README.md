@@ -12,18 +12,26 @@ This milestone sets up the **foundation** for the project, ensuring we have a ma
 
 alx-listing-app/
 │── components/ # Reusable UI components
+
 │ └── common/ # Shared components like Card and Button
+
 │── constants/ # Store app-wide constants (API URLs, static text, etc.)
+
 │── interfaces/ # TypeScript interfaces for props and types
+
 │── pages/ # Next.js Pages Router (entry points for routes)
+
 │── public/assets/ # Images, SVGs, and static assets
+
 │── styles/ # Global styles (Tailwind setup)
+
 │── README.md # Project documentation
+
 │── tailwind.config.js # TailwindCSS configuration
+
 │── tsconfig.json # TypeScript configuration
 
-markdown
-Copy code
+
 
 ### 🔹 Directories Explained
 - **`components/`** → Contains reusable UI building blocks (e.g., Card, Button).

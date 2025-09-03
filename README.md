@@ -1,40 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
 
-## Getting Started
+## 📌 Project Overview
+The **ALX Listing App** is a simplified Airbnb clone focused on creating a property listing page.  
+The goal of this project is to practice building reusable components with **Next.js**, **TypeScript**, and **TailwindCSS**, while following clean coding practices and a scalable folder structure.  
 
-First, run the development server:
+This milestone sets up the **foundation** for the project, ensuring we have a maintainable codebase for future feature development.
 
-```bash
+---
+
+## 🗂 Project Structure
+
+alx-listing-app/
+│── components/ # Reusable UI components
+│ └── common/ # Shared components like Card and Button
+│── constants/ # Store app-wide constants (API URLs, static text, etc.)
+│── interfaces/ # TypeScript interfaces for props and types
+│── pages/ # Next.js Pages Router (entry points for routes)
+│── public/assets/ # Images, SVGs, and static assets
+│── styles/ # Global styles (Tailwind setup)
+│── README.md # Project documentation
+│── tailwind.config.js # TailwindCSS configuration
+│── tsconfig.json # TypeScript configuration
+
+markdown
+Copy code
+
+### 🔹 Directories Explained
+- **`components/`** → Contains reusable UI building blocks (e.g., Card, Button).
+- **`interfaces/`** → Holds TypeScript interfaces (`CardProps`, `ButtonProps`, etc.) to enforce type safety.
+- **`constants/`** → Stores constants such as API URLs, UI labels, or placeholder data.
+- **`public/assets/`** → Contains static files like images and icons that can be served directly.
+
+---
+
+## ⚙️ Setup Instructions
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone <repo-url>
+   cd alx-listing-app
+Install dependencies
+
+bash
+Copy code
+npm install
+Run the development server
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open in browser
+Visit http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🎯 Milestone Objective
+The objective of this milestone is to scaffold the Airbnb clone project by:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Creating a basic Next.js app with TypeScript, ESLint, and TailwindCSS.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Setting up a clean and maintainable folder structure.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Preparing reusable Card and Button components.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Defining interfaces and constants for consistency.
 
-## Learn More
+Organizing assets for easy access.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This foundation ensures the project is ready for building the property listing page and future features.

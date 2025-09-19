@@ -10,9 +10,32 @@ export interface CardProps {
 
 // Props for a Button component
 export interface ButtonProps {
-  label: string;
-  onClick: () => void;
-  disabled?: boolean;   // optional
-  type?: "button" | "submit" | "reset"; // HTML button types
-  className?: string;   // allow passing Tailwind classes
+  children: React.ReactNode;
+  onClick?: () => void;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
+  variant?: "primary" | "secondary" | "danger" | "custom";
+  size?: "sm" | "md" | "lg";
+  rounded?: "sm" | "md" | "full";
+  bgColor?: string;   // Tailwind class for background color
+  textColor?: string; // Tailwind class for text color
+  href?: string;      // if provided, render as link
 }
+export type PropertyProps = {
+  name: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
+  rating: number;
+  category: string[];
+  price: number;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount: string;
+};
